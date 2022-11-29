@@ -87,7 +87,7 @@
 				392576D8293662A60037563A /* Mock */,
 				392576DB293662A60037563A /* Model */,
 				392576DD293662A60037563A /* View */,
-				392576DF293662A60037563A /* ViewController */,
+				392576DF293662A60037563A /* Factory */,
 			);
 			path = BarChart;
 			sourceTree = "<group>";
@@ -117,12 +117,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		392576DF293662A60037563A /* ViewController */ = {
+		392576DF293662A60037563A /* Factory */ = {
 			isa = PBXGroup;
 			children = (
 				392576E0293662A60037563A /* ChartFactory.swift */,
 			);
-			path = ViewController;
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		392576E1293662A60037563A /* Extensions */ = {
