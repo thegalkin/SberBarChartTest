@@ -10,9 +10,15 @@
 		392576B2293645BB0037563A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392576B1293645BB0037563A /* AppDelegate.swift */; };
 		392576B4293645BB0037563A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392576B3293645BB0037563A /* SceneDelegate.swift */; };
 		392576B6293645BB0037563A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392576B5293645BB0037563A /* ViewController.swift */; };
-		392576B9293645BB0037563A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392576B7293645BB0037563A /* Main.storyboard */; };
 		392576BB293645C20037563A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392576BA293645C20037563A /* Assets.xcassets */; };
 		392576BE293645C20037563A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392576BC293645C20037563A /* LaunchScreen.storyboard */; };
+		392576E4293662A60037563A /* BarChartMockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 392576D9293662A60037563A /* BarChartMockData.json */; };
+		392576E5293662A60037563A /* BarChartMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392576DA293662A60037563A /* BarChartMock.swift */; };
+		392576E6293662A60037563A /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392576DC293662A60037563A /* BarChart.swift */; };
+		392576E7293662A60037563A /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392576DE293662A60037563A /* BarChartView.swift */; };
+		392576E8293662A60037563A /* ChartFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392576E0293662A60037563A /* ChartFactory.swift */; };
+		392576E9293662A60037563A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392576E2293662A60037563A /* Color.swift */; };
+		392576EA293662A60037563A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392576E3293662A60037563A /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +26,16 @@
 		392576B1293645BB0037563A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		392576B3293645BB0037563A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		392576B5293645BB0037563A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		392576B8293645BB0037563A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		392576BA293645C20037563A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		392576BD293645C20037563A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		392576BF293645C20037563A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		392576D9293662A60037563A /* BarChartMockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BarChartMockData.json; sourceTree = "<group>"; };
+		392576DA293662A60037563A /* BarChartMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartMock.swift; sourceTree = "<group>"; };
+		392576DC293662A60037563A /* BarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		392576DE293662A60037563A /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		392576E0293662A60037563A /* ChartFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartFactory.swift; sourceTree = "<group>"; };
+		392576E2293662A60037563A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		392576E3293662A60037563A /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,67 @@
 			children = (
 				392576B1293645BB0037563A /* AppDelegate.swift */,
 				392576B3293645BB0037563A /* SceneDelegate.swift */,
+				392576D7293662A60037563A /* BarChart */,
+				392576E1293662A60037563A /* Extensions */,
+				392576E3293662A60037563A /* SceneDelegate.swift */,
 				392576B5293645BB0037563A /* ViewController.swift */,
-				392576B7293645BB0037563A /* Main.storyboard */,
 				392576BA293645C20037563A /* Assets.xcassets */,
 				392576BC293645C20037563A /* LaunchScreen.storyboard */,
 				392576BF293645C20037563A /* Info.plist */,
 			);
 			path = SberBarChartTest;
+			sourceTree = "<group>";
+		};
+		392576D7293662A60037563A /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				392576D8293662A60037563A /* Mock */,
+				392576DB293662A60037563A /* Model */,
+				392576DD293662A60037563A /* View */,
+				392576DF293662A60037563A /* ViewController */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		392576D8293662A60037563A /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				392576D9293662A60037563A /* BarChartMockData.json */,
+				392576DA293662A60037563A /* BarChartMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		392576DB293662A60037563A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				392576DC293662A60037563A /* BarChart.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		392576DD293662A60037563A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				392576DE293662A60037563A /* BarChartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		392576DF293662A60037563A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				392576E0293662A60037563A /* ChartFactory.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		392576E1293662A60037563A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				392576E2293662A60037563A /* Color.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +191,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392576E4293662A60037563A /* BarChartMockData.json in Resources */,
 				392576BE293645C20037563A /* LaunchScreen.storyboard in Resources */,
 				392576BB293645C20037563A /* Assets.xcassets in Resources */,
-				392576B9293645BB0037563A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +206,19 @@
 			files = (
 				392576B6293645BB0037563A /* ViewController.swift in Sources */,
 				392576B2293645BB0037563A /* AppDelegate.swift in Sources */,
+				392576EA293662A60037563A /* SceneDelegate.swift in Sources */,
+				392576E5293662A60037563A /* BarChartMock.swift in Sources */,
+				392576E8293662A60037563A /* ChartFactory.swift in Sources */,
+				392576E6293662A60037563A /* BarChart.swift in Sources */,
+				392576E9293662A60037563A /* Color.swift in Sources */,
 				392576B4293645BB0037563A /* SceneDelegate.swift in Sources */,
+				392576E7293662A60037563A /* BarChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		392576B7293645BB0037563A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				392576B8293645BB0037563A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		392576BC293645C20037563A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,9 +356,10 @@
 				INFOPLIST_FILE = SberBarChartTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +385,10 @@
 				INFOPLIST_FILE = SberBarChartTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
